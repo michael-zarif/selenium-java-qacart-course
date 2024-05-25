@@ -5,10 +5,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FormPageBasicTests extends BaseTest {
     @Test
-    public void testWebForm() {
+    @Order(1)
+    public void testWebFormTitle() {
         var expectedTitle = "Web form";
         var actualTitle = formPage.getPageTitle();
         assertEquals(expectedTitle, actualTitle);
+    }
+
+    @Test
+    @Order(2)
+    public void testWebForm() {
         formPage.enterText("Selenium");
         formPage.submitForm();
         var expectedMessage = "Received!";
