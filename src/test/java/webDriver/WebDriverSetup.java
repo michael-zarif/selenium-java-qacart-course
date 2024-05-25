@@ -1,4 +1,4 @@
-package pages;
+package webDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
