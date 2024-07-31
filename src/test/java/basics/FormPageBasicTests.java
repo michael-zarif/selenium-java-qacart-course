@@ -15,7 +15,7 @@ public class FormPageBasicTests extends FormBaseTest {
     @Test
     @Order(2)
     public void testWebForm() {
-        formPage.enterText("Selenium");
+        formPage.enterTextInput("Selenium");
         formPage.submitForm();
         var expectedMessage = "Received!";
         var actualMessage = formPage.getMessage();

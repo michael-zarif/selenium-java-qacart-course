@@ -8,7 +8,7 @@ public class WebFormPage extends WebPage {
         openPage("https://www.selenium.dev/selenium/web/web-form.html");
     }
 
-    public void enterText(String text) {
+    public void enterTextInput(String text) {
         driver.findElement(By.id("my-text-id")).sendKeys(text);
     }
 
