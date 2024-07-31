@@ -3,7 +3,7 @@ package basics;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FormPageBasicTests extends BaseTest {
+public class FormPageBasicTests extends FormBaseTest {
     @Test
     @Order(1)
     public void testWebFormTitle() {

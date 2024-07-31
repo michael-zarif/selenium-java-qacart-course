@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import pages.WebFormPage;
 
-public class BaseTest {
+public class FormBaseTest {
     protected WebFormPage formPage;
 
     @BeforeEach

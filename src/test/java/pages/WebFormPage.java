@@ -1,27 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import webDriver.WebDriverSetup;
 
-public class WebFormPage {
+public class WebFormPage extends WebPage {
 
-    private final WebDriver driver;
-
-    public WebFormPage() {
-        this.driver = WebDriverSetup.getChromeDriver(); // can be changed to any other browser defined in WebDriverSetup class
-    }
-
-    public String getPageTitle() {
-        return driver.getTitle();
-    }
-
-    public void openFormPage() {
-        driver.get("https://www.selenium.dev/selenium/web/web-form.html");
-    }
-
-    public void maximizeWindow() {
-        driver.manage().window().maximize();
+    public void openFormPage(){
+        openPage("https://www.selenium.dev/selenium/web/web-form.html");
     }
 
     public void enterText(String text) {
@@ -36,7 +20,4 @@ public class WebFormPage {
         return driver.findElement(By.id("message")).getText();
     }
 
-    public void tearDown() {
-        driver.quit();
-    }
 }
