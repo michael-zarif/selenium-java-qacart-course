@@ -4,6 +4,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class WebDriverSetup {
     public static ChromeDriver getChromeDriver() {
@@ -13,6 +15,12 @@ public class WebDriverSetup {
         // options.addArguments("--headless"); // Example option
 
         return new ChromeDriver(options);
+    }
+
+    public static FirefoxDriver getFirefoxDriver() {
+        FirefoxOptions options = new FirefoxOptions();
+
+        return new FirefoxDriver(options);
     }
 
     public static EdgeDriver getEdgeDriver() {
